@@ -6,7 +6,7 @@ public class Graph {
 	private int vCount;
 	private int eCount;
 	
-	private ArrayList[] adjacents;
+	private ArrayList[] adjacents;  //try replacing with singly linked list
 	
 	public Graph(int vCount) {
 		this.vCount = vCount;
