@@ -57,6 +57,9 @@ public class App {
 		williamAve.path2 = elmSt;
 		williamAve.path3 = stateSt;
 		
+		elmSt.path1 = williamAve;
+		elmSt.path2 = avenelSt;
+		
 	}//end main
 	public static int listLength(Node aNode) {		
 		int length=0;		
