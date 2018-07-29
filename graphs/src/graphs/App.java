@@ -26,7 +26,7 @@ public class App {
 		myGraph.addVertex("Pocono");
 		myGraph.addVertex("William");
 		
-		myGraph.addEdge("State", "Avenel");
+		
 		myGraph.addEdge("State", "Elm");
 		myGraph.addEdge("Elm", "Avenel");
 		myGraph.addEdge("Elm", "William");
@@ -34,6 +34,7 @@ public class App {
 		myGraph.addEdge("William", "Pocono");
 		myGraph.addEdge("Avenel", "Pocono");
 		myGraph.addEdge("Pocono", "Elm");
+		myGraph.addEdge("State", "Avenel");
 		
 		myGraph.print();
 		
