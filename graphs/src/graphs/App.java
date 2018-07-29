@@ -14,7 +14,7 @@ public class App {
 		myGraph.addEdge(4,0);
 		myGraph.addEdge(4,3);
 		
-		Object[] values = myGraph.adj(4);
+		Object[] values = myGraph.adj(0);
 		for(Object val: values) {
 			System.out.println(val);
 		}
@@ -30,9 +30,9 @@ public class App {
 		myGraph2.addEdgeLL(4,0);
 		myGraph2.addEdgeLL(4,3);
 		
-		myGraph2.adjLL(4);
+		//myGraph2.adjLL(4);
 		
-		myGraph2.listLength();
+		//myGraph2.listLength();
 		
 		/*
 		Node nodeA = new Node();

@@ -3,8 +3,7 @@ package graphs;
 public class Node {
 	
 	int src;
-	int dest;
-	int nodeId;
+	int[] dest;	
 	Node next = null;
 	
 }

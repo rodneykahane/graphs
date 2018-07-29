@@ -19,7 +19,6 @@ public class Graph {
 		for(int i=0;i<vCount;i++) {
 			adjacents[i] = new ArrayList<Integer>();
 		}	
-
 	}//end constructor
 
 	public int getVertexCount() {
@@ -35,19 +34,11 @@ public class Graph {
 		eCount++;
 	}	
 
-	public Node addEdgeLL(int src, int dest, int vCount) {
-		if(vCount==1) {
-			return adjacentsLL;
-			
-		}
-		
-			adjacentsLL.src = src;
-			adjacentsLL.dest = dest;
-			adjacentsLL.next = addEdgeLL(src,dest,vCount-1);
-			
-			return adjacentsLL;
-		
-
+	public void addEdgeLL(int src, int dest) {
+		int cnt=0;
+		adjacentsLL.src=src;
+		adjacentsLL.dest[cnt]=dest;
+		eCount++;
 	}//end addEdgeLL
 
 	public Object[] adj(int src) {
