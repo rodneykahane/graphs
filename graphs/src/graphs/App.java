@@ -3,7 +3,7 @@ package graphs;
 public class App {
 
 	public static void main(String[] args) {
-		Graph myGraph = new Graph(5);
+		/*Graph myGraph = new Graph(5);
 		myGraph.addEdge(0,1);
 		myGraph.addEdge(0,2);
 		myGraph.addEdge(0,3);
@@ -17,71 +17,29 @@ public class App {
 		Object[] values = myGraph.adj(0);
 		for(Object val: values) {
 			System.out.println(val);
-		}
+		}*/
 		
-		Graph myGraph2 = new Graph(5);
-		myGraph2.addEdgeLL(0,1);
-		myGraph2.addEdgeLL(0,2);
-		myGraph2.addEdgeLL(0,3);
-		myGraph2.addEdgeLL(1,2);
-		myGraph2.addEdgeLL(1,4);
-		myGraph2.addEdgeLL(2,3);
-		myGraph2.addEdgeLL(3,1);
-		myGraph2.addEdgeLL(4,0);
-		myGraph2.addEdgeLL(4,3);
+		BetterGraph myGraph = new BetterGraph(5,"directed");
+		myGraph.addVertex("State");
+		myGraph.addVertex("Avenel");
+		myGraph.addVertex("Elm");
+		myGraph.addVertex("Pocono");
+		myGraph.addVertex("William");
 		
-		//myGraph2.adjLL(4);
+		myGraph.addEdge("State", "Avenel");
+		myGraph.addEdge("State", "Elm");
+		myGraph.addEdge("Elm", "Avenel");
+		myGraph.addEdge("Elm", "William");
+		myGraph.addEdge("William", "State");
+		myGraph.addEdge("William", "Pocono");
+		myGraph.addEdge("Avenel", "Pocono");
+		myGraph.addEdge("Pocono", "Elm");
 		
-		//myGraph2.listLength();
-		
-		/*
-		Node nodeA = new Node();
-		nodeA.data = 4;		
-		
-		Node nodeB = new Node();
-		nodeB.data = 3;		
-		
-		Node nodeC = new Node();
-		nodeC.data = 7;		
-		
-		Node nodeD = new Node();
-		nodeD.data = 8;
+		myGraph.print();
 		
 		
-		nodeA.next = nodeB;
-		nodeB.next = nodeC;
-		nodeC.next = nodeD;*/
 		
-		//System.out.println(listLength(nodeA)); //4
-		//System.out.println(listLength(nodeB));//3
-		//System.out.println(nodeD.data);
 		
-		/*Node stateSt = new Node();
-		Node avenelSt = new Node();
-		Node poconoPl = new Node();
-		Node williamAve = new Node();		
-		Node elmSt = new Node();
-		
-		stateSt.path1 = avenelSt;
-		stateSt.path2 = elmSt;
-		stateSt.data = 1;
-		
-		avenelSt.path1 = poconoPl;
-		stateSt.data = 2;
-		
-		poconoPl.path1 = elmSt;
-		poconoPl.data = 3;
-		
-		williamAve.path1 = poconoPl;
-		williamAve.path2 = elmSt;
-		williamAve.path3 = stateSt;
-		williamAve.data = 4;
-		
-		elmSt.path1 = williamAve;
-		elmSt.path2 = avenelSt;
-		elmSt.data = 5;
-*/		
-		//Graph.listRoutes(stateSt);
 		
 	}//end main
 	
