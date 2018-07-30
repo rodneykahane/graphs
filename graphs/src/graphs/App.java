@@ -16,7 +16,7 @@ public class App {
 		
 		Object[] values = myGraph.adj(0);
 		for(Object val: values) {
-			System.out.println(val);
+			System.out.println(val);//
 		}*/
 		
 		BetterGraph myGraph = new BetterGraph(5,"directed");

@@ -21,7 +21,7 @@ public class BetterGraph {
 			this.name = name;
 			this.adjList = aNode;
 		}
-	}//end Vertex class
+	}//end Vertex class//
 
 	public BetterGraph(int vCount, String graphType) {
 
